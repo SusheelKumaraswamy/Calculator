@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="heading" style="width: 30%;margin: auto; text-align: center;"><h1>Calculator</h1></div>
+    <div class="main">
+        <input type="text" class="form-control" id="input1" required>
+        <br>
+        <select class="form-select" id="values" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="+">Addition</option>
+            <option value="-">Subraction</option>
+            <option value="x">Multiplication</option>
+            <option value="/">Division</option>
+            <option value="%">Remainder(modulus)</option>
+        </select>
+        <br>
+        <input type="text" class="form-control" id="input2" required>
+        <br>
+        <br>
+        <input type="button" class="btn btn-warning" value="=" id="equals">
+        <br>
+        <br>
+        <input type="text" class="form-control" id="output" required >    
+    </div>  
+
+    <p style="text-align: center;">designed by susheel</p>
+</body>
+<script src="script.js"></script>
+</html>
