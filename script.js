@@ -1,13 +1,14 @@
 var input1=document.getElementById("input1");
+var count1=0;
 input1.addEventListener("keypress",function(e){
   if (e.keyCode != 46 && e.keyCode > 31 && (e.keyCode < 48 || e.keyCode > 57)){
     alert("Warning:Enter Number alone");
     e.preventDefault();
   }
   if(e.keyCode===46){
-    count++;
+    count1++;
   }
-  if(count>1 && e.keyCode===46){
+  if(count1>1 && e.keyCode===46){
     e.preventDefault();
   }
 })
